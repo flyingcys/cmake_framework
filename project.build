@@ -3,6 +3,8 @@ ifndef VERBOSE
 MAKEFLAGS += --no-print-directory
 endif
 
+export MENUCONFIG_STYLE=aquatic
+
 # The command to remove a file.
 RM = cmake -E remove_directory
 
@@ -18,7 +20,7 @@ clean:
 	$(RM) build
 
 menuconfig:
-	python ../../tools/kconfig/menuconfig.py
-	python ../../tools/kconfig/genconfig.py
+	python ../../tools/Kconfiglib/menuconfig.py
+	python ../../tools/Kconfiglib/genconfig.py
 
 .PHONY:build clean menuconfig ninja
