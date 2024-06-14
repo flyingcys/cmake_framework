@@ -20,10 +20,11 @@ This is a CMake framework for GCC compilation.
 ```
 cd examples/helloworld
 make
-
+make VERBOSE=1
 
 cd examples/helloworld2
 make
+make VERBOSE=1
 ```
 
 - Compile two demos at the same time
@@ -31,6 +32,7 @@ make
 ```
 cd examples
 make
+make VERBOSE=1
 ```
 
 ## Use menuconfig

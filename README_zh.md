@@ -18,10 +18,12 @@
 ```
 cd examples/helloworld
 make
+make VERBOSE=1
 
 
 cd examples/helloworld2
 make
+make VERBOSE=1
 ```
 
 - 同时编译两个 demo
@@ -29,6 +31,7 @@ make
 ```
 cd examples
 make
+make VERBOSE=1
 ```
 
 ## Menuconfig 使用
